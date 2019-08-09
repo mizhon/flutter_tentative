@@ -57,6 +57,13 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  // 复位Counter值为0
+  void _resetCounter() {
+    setState(() {
+      _counter = 0;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -96,8 +103,16 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.display1,
+              style: Theme.of(context).textTheme.display4,
             ),
+            FlatButton(
+              color: Colors.blue,
+              textColor: Colors.white,
+              child: Text(
+                "Rest Counter to Zero"
+              ),
+              onPressed: _resetCounter
+            )
           ],
         ),
       ),
