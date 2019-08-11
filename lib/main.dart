@@ -2,7 +2,14 @@ import 'package:flutter/material.dart';
 import 'views/counter.dart';
 import 'common/utils.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  Future<Map<String, dynamic>> t = Utils.parseJsonFromAssets('lib/configs/settings.json');
+  // print(t.asStream());
+  t.then((onValue) {
+    print('---> $onValue');
+  });
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
