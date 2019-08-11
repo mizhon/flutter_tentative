@@ -1,16 +1,15 @@
-# flutter_tentative
+# Project: flutter_tentative
 
-A new Flutter project.
+This is a new Flutter tentative project.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Purpose
 
-A few resources to get you started if this is your first Flutter project:
+This project is a starting point for a Flutter application for trying and knowing well with different flutter widgets.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Steps
+1. Familiar with basic UI layout widgets
+2. BloC pattern (Business Logic Component)
+3. Routers
+4. Data & network request (Dio)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
