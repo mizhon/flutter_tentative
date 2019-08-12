@@ -1,18 +1,21 @@
 import 'package:flutter/material.dart';
+import 'screens/splash/splash.dart';
 import 'screens/counter/counter.dart';
 import 'common/utils.dart';
 
 void main() {
+  // 验证Dart解析JSON数据的方式 
   Future<Map<String, dynamic>> t = Utils.parseJsonFromAssets('lib/configs/settings.json');
   // print(t.asStream());
   t.then((onValue) {
     print("---> $onValue");
     print(onValue.containsKey("settings"));
   });
-  runApp(MyApp());
+
+  runApp(TentativeApp());
 }
 
-class MyApp extends StatelessWidget {
+class TentativeApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -23,7 +26,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: CounterPage(title: 'Flutter Tentative'),
+      // home: CounterPage(title: 'Flutter Tentative'),
+      home: SplashPage(),
+      routes: <String, WidgetBuilder> {
+        '/Home': (BuildContext context) => CounterPage(title: 'Flutter Tentative')
+      }
     );
   }
 }
