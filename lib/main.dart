@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'views/counter.dart';
+import 'screens/counter/counter.dart';
 import 'common/utils.dart';
 
 void main() {
   Future<Map<String, dynamic>> t = Utils.parseJsonFromAssets('lib/configs/settings.json');
   // print(t.asStream());
   t.then((onValue) {
-    print('---> $onValue');
+    print("---> $onValue");
+    print(onValue.containsKey("settings"));
   });
   runApp(MyApp());
 }
