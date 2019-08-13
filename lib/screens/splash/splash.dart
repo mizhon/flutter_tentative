@@ -55,15 +55,15 @@ class _SplashPageState extends State<SplashPage> {
               child: BackdropFilter(
                 filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
                 child: Container(
-                  width: 350.0,
-                  height: 350.0,
+                  // width: 350.0,
+                  // height: 350.0,
                   decoration: BoxDecoration(
                     color: Colors.grey.shade300.withOpacity(0.5)
                   ),
                   child: Center(
                     child: Text(
                       'Frosted',
-                      style: Theme.of(context).textTheme.display3,
+                      style: Theme.of(context).textTheme.display2,
                     ),
                   ),
                 ),
