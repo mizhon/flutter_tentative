@@ -4,8 +4,8 @@ class ListViewScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    return Card(
-      child: ListView(
+    return Scaffold(
+      body: ListView(
         children: <Widget>[
           Card (
             child: ListTile(
