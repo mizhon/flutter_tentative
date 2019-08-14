@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screens/lists/listview.dart';
 import 'screens/splash/splash.dart';
 import 'screens/counter/counter.dart';
 import 'common/utils.dart';
@@ -29,7 +30,8 @@ class TentativeApp extends StatelessWidget {
       // home: CounterPage(title: 'Flutter Tentative'),
       home: SplashPage(),
       routes: <String, WidgetBuilder> {
-        '/Home': (BuildContext context) => CounterPage(title: 'Flutter Tentative')
+        // '/home': (BuildContext context) => CounterPage(title: 'Flutter Tentative')
+        '/listview': (BuildContext context) => ListViewScreen()
       }
     );
   }

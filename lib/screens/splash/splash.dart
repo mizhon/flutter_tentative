@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_tentative/screens/counter/counter.dart';
-// import 'package:flutter_tentative/screens/counter/counter.dart';
+import 'package:flutter_tentative/screens/lists/listview.dart';
 import 'package:flutter_tentative/screens/splash/scaleRoute.dart';
 
 class SplashPage extends StatefulWidget {
@@ -23,10 +23,10 @@ class _SplashPageState extends State<SplashPage> {
     // Navigator.of(context).pushReplacementNamed('/Home');
     Navigator.pushReplacement(
       context, 
-      // MaterialPageRoute(
-      //   builder: (BuildContext context) => CounterPage(title: 'Flutter Tentative')
-      // )
-      ScaleRoute(widget: CounterPage(title: 'Flutter Tentative'))
+      MaterialPageRoute(
+        builder: (BuildContext context) => ListViewScreen()
+      )
+      // ScaleRoute(widget: CounterPage(title: 'Flutter Tentative'))
     );
   }
 
