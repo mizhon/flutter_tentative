@@ -16,14 +16,18 @@ class DynamicListViewScreen extends StatelessWidget {
           return Column(
             children: <Widget>[
               Container(
-                child: Text(
-                  itemList[index],
-                  style: TextStyle(
-                    fontSize: 28.0,
-                    color: Colors.green
-                  ),
+                child: Column(
+                  children: <Widget>[
+                    Text(
+                      itemList[index],
+                      style: TextStyle(
+                        fontSize: 28.0,
+                        color: Colors.green
+                      ),
+                    ),
+                  ],
                 ),
-              )
+              ),
             ],
           );
         },
