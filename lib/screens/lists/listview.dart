@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 class ListViewScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
+      appBar: AppBar(
+        title: Text("ListView")
+      ),
       body: ListView(
         children: <Widget>[
           Card (
@@ -13,12 +15,15 @@ class ListViewScreen extends StatelessWidget {
                 Icons.markunread,
                 color: Colors.blue
               ),
-              title: Text('敏捷数据看板'),
+              title: Text(
+                '敏捷数据看板',
+                style: TextStyle(fontFamily: 'RobotoMono'),
+              ),
               subtitle: Text('子任务'),
-              selected: true,
+              selected: false,
               trailing: Icon(
                 Icons.arrow_forward_ios
-              )
+              ),
             ),
           ),
           Card (
@@ -35,7 +40,7 @@ class ListViewScreen extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.map),
             title: Text('Map'),
-          )
+          ),
         ],
       ),
     );

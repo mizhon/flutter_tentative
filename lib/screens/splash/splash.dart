@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_tentative/screens/counter/counter.dart';
+import 'package:flutter_tentative/screens/lists/dynamic_listview.dart';
 import 'package:flutter_tentative/screens/lists/listview.dart';
 import 'package:flutter_tentative/screens/splash/scaleRoute.dart';
 
@@ -24,7 +25,7 @@ class _SplashPageState extends State<SplashPage> {
     Navigator.pushReplacement(
       context, 
       MaterialPageRoute(
-        builder: (BuildContext context) => ListViewScreen()
+        builder: (BuildContext context) => DynamicListViewScreen()
       )
       // ScaleRoute(widget: CounterPage(title: 'Flutter Tentative'))
     );

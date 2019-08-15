@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'screens/lists/listview.dart';
 import 'screens/splash/splash.dart';
 import 'screens/counter/counter.dart';
+import 'screens/lists/dynamic_listview.dart';
 import 'common/utils.dart';
 
 void main() {
@@ -31,7 +32,7 @@ class TentativeApp extends StatelessWidget {
       home: SplashPage(),
       routes: <String, WidgetBuilder> {
         // '/home': (BuildContext context) => CounterPage(title: 'Flutter Tentative')
-        '/listview': (BuildContext context) => ListViewScreen()
+        '/listview': (BuildContext context) => DynamicListViewScreen()
       }
     );
   }

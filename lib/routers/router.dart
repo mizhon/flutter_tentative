@@ -4,4 +4,4 @@
 // }
 
 final String HOME_PAGE = '', 
-  DEAULT_PAGE = '';
+            DEAULT_PAGE = '';
