@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class DynamicListViewScreen extends StatelessWidget {
 
-  List<String> itemList = ["1", "2", "3"];
+  List<String> itemList = ["北京市", "上海市", "深圳市", "杭州市"];
 
   @override
   Widget build(BuildContext context) {
@@ -21,8 +21,10 @@ class DynamicListViewScreen extends StatelessWidget {
                     Text(
                       itemList[index],
                       style: TextStyle(
-                        fontSize: 28.0,
-                        color: Colors.green
+                        fontSize: 24.0,
+                        color: Colors.green,
+                        backgroundColor: Colors.indigo,
+                        height: 2.0
                       ),
                     ),
                   ],
