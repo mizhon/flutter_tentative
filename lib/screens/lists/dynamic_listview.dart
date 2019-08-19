@@ -6,6 +6,7 @@ class DynamicListViewScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       appBar: AppBar(
         title: Text("动态 ListView 示例")
@@ -24,9 +25,13 @@ class DynamicListViewScreen extends StatelessWidget {
                         fontSize: 24.0,
                         color: Colors.green,
                         backgroundColor: Colors.indigo,
-                        height: 2.0
+                        height: 1.0
                       ),
                     ),
+                    Icon(
+                      Icons.backup,
+                    ),
+                    // Image.network("http://img.rangaofei.cn/01b18.jpg")
                   ],
                 ),
               ),

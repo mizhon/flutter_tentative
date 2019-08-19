@@ -20,6 +20,8 @@ class _SplashPageState extends State<SplashPage> {
     return Timer(_duration, _navigationPage);
   }
 
+  // TODO: 创建一个获取 [PageRouteBuilder] widget 的方法，用于设置路由信息
+
   void _navigationPage() {
     // Navigator.of(context).pushReplacementNamed('/Home');
     Navigator.pushReplacement(
