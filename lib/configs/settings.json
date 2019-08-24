@@ -1,8 +1,22 @@
 {
-    "appName": "flutter_tentative",
-    "author": "mizhon",
-    "description": "This is a flutter tentative app",
-    "settings": {
-        
+  "appName": "flutter_tentative",
+  "author": "mizhon",
+  "description": "This is a flutter tentative app",
+  "settings": [
+    {
+      "id": 1,
+      "name": "mine",
+      "desc": "我的tab"
+    },
+    {
+      "id": 2,
+      "name": "mine",
+      "desc": "我的tab"
+    },
+    {
+      "id": 3,
+      "name": "mine",
+      "desc": "我的tab"
     }
+  ]
 }

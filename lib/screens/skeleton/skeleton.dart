@@ -11,24 +11,20 @@ class _SkeletonScreenState extends State<SkeletonScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Hello World App')
-      ),
+      appBar: AppBar(title: Text('Hello World App')),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: 0,
         items: [
           BottomNavigationBarItem(
-           icon: Icon(Icons.home),
-           title: Text('Home'),
-         ),
-         BottomNavigationBarItem(
-           icon: Icon(Icons.mail),
-           title: Text('Messages'),
-         ),
-         BottomNavigationBarItem(
-           icon: Icon(Icons.person),
-           title: Text('Profile')
-         ),
+            icon: Icon(Icons.home),
+            title: Text('Home'),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.mail),
+            title: Text('Messages'),
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.person), title: Text('Profile')),
         ],
       ),
     );
